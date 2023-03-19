@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/rumah/PNG/buildings/building_8/building_1.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 45, 24.5 )
+
+[node name="Rumah2" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.109741, 0.0988372 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 44, 43.5 )
+shape = SubResource( 1 )
